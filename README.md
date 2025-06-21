@@ -1,4 +1,4 @@
-# 🧠 Jet Tagging – QCD vs TT Classification using Deep Learning  
+# 🧠 Jet Tagging – QCD vs TT Classification using Machine Learning  
 **Top 10 Finalist – HSF-India 2025 Kaggle Challenge**
 
 ![Leaderboard Badge](https://img.shields.io/badge/Kaggle-Top_10-blue)  
@@ -41,19 +41,43 @@ Distinguishing between the two is essential for detecting **new physics** such a
 
 jet-tagging-qcd-vs-tt/
 │
-├── notebooks/ # Jupyter notebooks for each model
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_xgboost_model.ipynb
-│ ├── 03_dnn_model.ipynb
-│ ├── 04_cnn_model.ipynb
-│ └── 05_ensemble.ipynb
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_xgboost_model.ipynb
+│   ├── 03_dnn_model.ipynb
+│   ├── 04_cnn_model.ipynb
+│   ├── 05_ensemble.ipynb
 │
-├── models/ # Trained models and architecture visualizations
-├── figures/ # ROC curves, score snapshots, CNN diagrams
-├── submissions/ # Submission files to Kaggle
-├── src/ # (Optional) Training utilities and ensemble functions
-├── requirements.txt # Environment setup
-├── README.md # You're here
+├── models/
+│   ├── best_model_xgb.pkl
+│   ├── best_model_dnn.h5
+│   └── cnn_model_architecture.png
+│
+├── data/ (optional if public)
+│   └── README.md → describe the Kaggle dataset link instead
+│
+├── submissions/
+│   ├── submission_xgb.csv
+│   ├── submission_dnn.csv
+│   ├── submission_cnn.csv
+│   └── final_submission.csv
+│
+├── figures/
+│   ├── roc_xgb.png
+│   ├── roc_dnn.png
+│   ├── cnn_architecture.png
+│   └── leaderboard_score.png
+│
+├── src/ (optional)
+│   ├── preprocessing.py
+│   ├── training_utils.py
+│   └── ensemble.py
+│
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+├── README.md ✅
+
 
 ---
 
