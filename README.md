@@ -1,4 +1,4 @@
-# 🧠 Jet Tagging – QCD vs TT Classification using Machine Learning  
+# Jet Tagging – QCD vs TT Classification using Machine Learning  
 **Top 10 Finalist – HSF-India 2025 Kaggle Challenge**
 
 ![Leaderboard Badge](https://img.shields.io/badge/Kaggle-Top_10-blue)  
