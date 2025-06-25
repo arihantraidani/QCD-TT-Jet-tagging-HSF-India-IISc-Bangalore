@@ -1,0 +1,76 @@
+# 🧬 Dataset Instructions
+
+This project uses data from the Kaggle competition:
+
+**🔗 [QCD vs TT Jet Tagging – HSF India @ IISc Bangalore](https://www.kaggle.com/competitions/qcd-tt-jet-tagging-hsf-india-bangalore/data)**
+
+To run this project locally, you will need to download and organize the competition data as described below.
+
+---
+
+## 📁 Dataset Overview
+
+The dataset consists of three types of data:
+
+### 1️⃣ Tabular Data (`.csv` files)
+| File | Description |
+|------|-------------|
+| `train.csv` | Scalar feature data and labels for training |
+| `test.csv`  | Scalar feature data for the test set |
+| `sample_submission.csv` | Format required for submission |
+
+### 2️⃣ Feature Arrays (`.npy` files)
+| File | Description |
+|------|-------------|
+| `X_train.npy` | Processed scalar features for training |
+| `X_val.npy`   | Processed scalar features for validation |
+| `X_test.npy`  | Processed scalar features for testing |
+| `y_train.npy` | Corresponding training labels |
+| `y_val.npy`   | Corresponding validation labels |
+
+These are used in ML/DL models like Logistic Regression, XGBoost, DNN, etc.
+
+### 3️⃣ Jet Image Data (`.npy` image arrays)
+| Folder | Description |
+|--------|-------------|
+| `train_images/` | Jet images for training (each file is a 37x37 jet image) |
+| `val_images/`   | Jet images for validation |
+| `test_images/`  | Jet images for testing/inference |
+
+These are used in CNNs and other image-based models.
+
+---
+
+## 📥 How to Download the Data
+
+1. Go to the [Kaggle competition data page](https://www.kaggle.com/competitions/qcd-tt-jet-tagging-hsf-india-bangalore/data)
+2. Download all the following:
+   - `train.csv`
+   - `test.csv`
+   - `sample_submission.csv`
+   - `X_train.npy`, `X_val.npy`, `X_test.npy`
+   - `y_train.npy`, `y_val.npy`
+   - `train_images/`, `val_images/`, `test_images/` folders
+3. Create a folder called `data/` at the root of your local repo
+4. Place all downloaded files and folders inside `data/`
+
+---
+
+## 📂 Expected Folder Structure
+
+data/
+├── train.csv
+├── test.csv
+├── sample_submission.csv
+├── X_train.npy
+├── X_val.npy
+├── X_test.npy
+├── y_train.npy
+├── y_val.npy
+├── train_images/
+│ ├── 0001.npy
+│ ├── ...
+├── val_images/
+│ └── ...
+├── test_images/
+│ └── ...
