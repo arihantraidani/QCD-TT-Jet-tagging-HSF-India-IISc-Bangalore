@@ -1,0 +1,40 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data files
+*.npy
+*.csv
+*.h5
+*.ckpt
+*.weights
+*.pth
+*.pkl
+
+# Model files
+*.joblib
+*.sav
+
+# Folders (untracked, for large files or local outputs)
+data/
+train_images/
+val_images/
+test_images/
+results/
+outputs/
+logs/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.venv/
+env/
+venv/
